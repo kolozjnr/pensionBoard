@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UnivController;
+use App\Http\Controllers\StaffController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})*/
+Route::get('/', [UnivController::class, 'index'])->name('Home');
+Route::get('dashboard', [UnivController::class, 'dashboard'])
+->middleware(['auth'])->name('dashboard');
+Route::resource('staffs',StaffController::class)->middleware(['auth']);
 
 require __DIR__.'/auth.php';
