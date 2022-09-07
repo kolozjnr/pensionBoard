@@ -41,4 +41,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+      /**
+     * uuid setup
+     * 
+     */
+    public $incrementing = false;
+
+    protected $keyType = 'uuid';
+
 }
