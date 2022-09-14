@@ -32,6 +32,7 @@ return new class extends Migration
             $table->string('ultility_allowance')->nullable();
             $table->string('transport_allowance')->nullable();
             $table->date('date_employed');
+            $table->date('date_retired');
             $table->string('start_level');
             $table->string('start_step');
             $table->string('status');

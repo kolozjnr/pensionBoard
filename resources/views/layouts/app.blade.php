@@ -36,8 +36,18 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
+
+            
+  
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
+   
+
+   <!-- Script -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
+
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
@@ -82,5 +92,43 @@
         <script src="{{asset('admin/assets/js/main.js')}}"></script>
         <script src="{{asset('admin/assets/js/lga.js')}}"></script>
         <script src="{{asset('admin/assets/js/lga.min.js')}}"></script>
+        
+
+        <!--Ajax Request for pensioneers--->
+        <!-- Script -->
+   <script type='text/javascript'>
+    
+
+$(document).ready(function(){
+ 
+  $('#empTable').on('click','.viewdetails',function(){
+      var empid = $(this).attr('data-id');
+
+      if(empid > 0){
+
+         // AJAX request
+         var url = "{{ route('getEmployeeDetails',[':empid']) }}";
+         url = url.replace(':empid',empid);
+
+         // Empty modal data
+         $('#tblempinfo tbody').empty();
+
+         $.ajax({
+             url: url,
+             dataType: 'json',
+             success: function(response){
+
+                 // Add employee details
+                 $('#tblempinfo tbody').html(response.html);
+
+                 // Display Modal
+                 $('#empModal').modal('show'); 
+             }
+         });
+      }
+  });
+
+});
+    </script>
     </body>
 </html>

@@ -23,8 +23,17 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })*/
 Route::get('/', [UnivController::class, 'index'])->name('Home');
+
+Route::group(['middleware' => ['auth']], function(){
+    
 Route::get('dashboard', [UnivController::class, 'dashboard'])
-->middleware(['auth'])->name('dashboard');
-Route::resource('staffs',StaffController::class)->middleware(['auth']);
+->name('dashboard');
+Route::resource('staffs',StaffController::class);
+Route::post('search', [UnivController::class, 'search'])->name('Search');
+Route::get('search', [UnivController::class, 'search'])->name('Search');
+Route::get('pension', [UnivController::class, 'pension'])->name('pension');
+Route::post('pension', [UnivController::class, 'pension'])->name('pension');
+Route::get('getEmployeeDetails/{empid}', [UnivController::class, 'getEmployeeDetails'])->name('getEmployeeDetails');
+});
 
 require __DIR__.'/auth.php';

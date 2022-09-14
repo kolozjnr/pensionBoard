@@ -59,8 +59,8 @@ class StaffController extends Controller
      */
     public function edit($id)
     {
-        $staff = StaffRecord::find($id);
-        return view('admin.show', compact('staff'));
+        $user = StaffRecord::find($id);
+        return view('admin.staff_edit', compact('user'));
     }
 
     /**
@@ -72,7 +72,12 @@ class StaffController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $update = StaffRecord::find($id);
+        $input = $request->all();
+
+        $update->update($input);
+        return redirect()->route('staffs.index')
+                        ->with('success','User data updated successfully');
     }
 
     /**
