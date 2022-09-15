@@ -51,30 +51,10 @@
             <nav id="navbar" class="navbar">
                 <ul>
                 <li><a href="/" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                    <li><a href="#">Dropdown 1</a></li>
-                    <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                        <li><a href="#">Deep Dropdown 1</a></li>
-                        <li><a href="#">Deep Dropdown 2</a></li>
-                        <li><a href="#">Deep Dropdown 3</a></li>
-                        <li><a href="#">Deep Dropdown 4</a></li>
-                        <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Dropdown 2</a></li>
-                    <li><a href="#">Dropdown 3</a></li>
-                    <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                </li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav><!-- .navbar -->
         
@@ -92,9 +72,9 @@
                 <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
                     <a href="index.html" class="logo d-flex align-items-center">
-                    <span>Nova</span>
+                    <span>Niger State Pension</span>
                     </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                    <p>The contributory Pension Scheme Requires pension funds to be privately managed exclusively by licensed pension Fund Administration (PFA)</p>
                     <div class="social-links d-flex  mt-3">
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -106,22 +86,21 @@
                 <div class="col-lg-2 col-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                    <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Terms of service</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Privacy policy</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/">Home</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/about">About us</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/faq">FAQ</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/contact">Contact</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/privacy">Privacy policy</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
+                <div class="col-lg-2 col-5 footer-links">
+                    <h4>News</h4>
                     <ul>
-                    <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Web Development</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Product Management</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/">Pension News</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/">Pension Tips</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/">Pension Laws</a></li>
+                    <li><i class="bi bi-dash"></i> <a href="/">Pension Operators</a></li>
                     </ul>
                 </div>
 
@@ -129,10 +108,10 @@
                     <h4>Contact Us</h4>
                     <p>
                     A108 Adam Street <br>
-                    New York, NY 535022<br>
-                    United States <br><br>
-                    <strong>Phone:</strong> +1 5589 55488 55<br>
-                    <strong>Email:</strong> info@example.com<br>
+                    Minna, Niger State<br>
+                    Nigeria <br><br>
+                    <strong>Phone:</strong> +2347067317819<br>
+                    <strong>Email:</strong> info@pension.com<br>
                     </p>
 
                 </div>
@@ -144,14 +123,13 @@
             <div class="footer-legal">
             <div class="container">
                 <div class="copyright">
-                &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Niger State Pension Board</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                 </div>
             </div>
             </div>
