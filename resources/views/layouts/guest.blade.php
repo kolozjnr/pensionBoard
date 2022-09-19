@@ -32,14 +32,19 @@
 
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
+    <style>
+        .nav-bg{
+            background-color: #1b2f45;
+        }
+    </style>
     </head>
     <body class="page-index">
 
         <!-- ======= Header ======= -->
-        <header id="header" class="header d-flex align-items-center fixed-top">
+        <header id="header" class="header d-flex nav-bg align-items-center sticky-top">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1 class="d-flex align-items-center">Niger State Pension Board</h1>
@@ -52,7 +57,7 @@
                 <ul>
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/">FAQ</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/login">Login</a></li>
                 </ul>

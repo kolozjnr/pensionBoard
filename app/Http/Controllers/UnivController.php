@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
+use App\Models\User;
 use App\Models\StaffRecord;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -92,6 +93,20 @@ class UnivController extends Controller
         $response['html'] = $html;
   
         return response()->json($response);
+     }
+
+     public function profile(){
+        $users = User::all();
+        foreach($users as $user)
+        {
+            return view("admin.users-profile", compact("user"));
+        }
+     }
+     public function about(){
+        return view("users.about");
+     }
+     public function contact(){
+        return view("users.contact");
      }
   
 }

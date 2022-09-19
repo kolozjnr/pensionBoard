@@ -19,11 +19,11 @@
             
             <div class="col-md-12">
               <label for="inputName5" class="form-label"><strong>Staff ID</strong></label>
-              <input type="text" name="staff_id" class="form-control" id="inputName5">
+              <input type="text" name="staff_id" class="form-control" id="inputName5" required>
             </div>
             <div class="col-md-4">
               <label for="inputName5" class="form-label"><strong>First Name</strong></label>
-              <input type="text" name="fname" class="form-control" id="inputName5">
+              <input type="text" name="fname" class="form-control" id="inputName5" required>
             </div>
             <div class="col-md-4">
               <label for="inputName5" class="form-label"><strong>Middle Name</strong></label>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-4">
               <label for="inputName5" class="form-label"><strong>Last Name</strong></label>
-              <input type="text" name="lname" class="form-control" id="inputName5">
+              <input type="text" name="lname" class="form-control" id="inputName5" required>
             </div>
             <div class="form-group col-md-4">
               <label for="inputEmail5" class="form-label"><strong>Email</strong></label>
@@ -39,11 +39,11 @@
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Phone</strong></label>
-              <input type="text" name="tel" class="form-control" id="inputAddress2" placeholder="07067317819">
+              <input type="text" name="tel" class="form-control" id="inputAddress2" placeholder="07067317819" required>
             </div>
             <div class="col-md-4">
               <label for="DOB" class="form-label">Date Of Birth</label>
-              <input type="date" name="dob" class="form-control" id="DOB">
+              <input type="date" name="dob" class="form-control" id="DOB" required>
             </div>
             <div class="col-md-4">
               <label for="exampleDataList" class="form-label"><strong>State</strong></label>
@@ -102,16 +102,16 @@
             </div>
             <div class="col-4">
               <label for="inputAddress5" class="form-label">Address</label>
-              <input type="text"name="address" class="form-control" id="inputAddres5s" placeholder="1234 Main St">
+              <input type="text"name="address" class="form-control" id="inputAddres5s" placeholder="1234 Main St" required>
             </div>
             <h5 class="card-title">Salary Details</h5>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Place of Work</strong></label>
-              <input type="text" name="place_of_work" class="form-control" id="inputAddress2" placeholder="Niger state Polytechnic Zungeru">
+              <input type="text" name="place_of_work" class="form-control" id="inputAddress2" placeholder="Niger state Polytechnic Zungeru" required>
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Basic Salary</strong></label>
-              <input type="text" name="basic_salary" class="form-control" id="inputAddress2" placeholder="Basic Salary">
+              <input type="text" name="basic_salary" class="form-control" id="inputAddress2" placeholder="Basic Salary" required>
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Rent Allowance</strong></label>
@@ -129,22 +129,22 @@
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Date Employed</strong></label>
-              <input type="date" name="date_employed" class="form-control" id="inputAddress2" placeholder="">
+              <input type="date" name="date_employed" class="form-control" id="inputAddress2" placeholder="" required>
             </div>
 
 
             
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Start Level</strong></label>
-              <input type="text" name="start_level" class="form-control" id="inputAddress2" placeholder="start Level">
+              <input type="text" name="start_level" class="form-control" id="inputAddress2" placeholder="start Level" required>
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Start Step</strong></label>
-              <input type="text" name="start_step" class="form-control" id="inputAddress2" placeholder="Start Step">
+              <input type="text" name="start_step" class="form-control" id="inputAddress2" placeholder="Start Step" required>
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Status</strong></label>
-              <select name="status" class="form-control" id="">
+              <select name="status" class="form-control" id="" required>
                 <option value="" selected disabled>Select Status</option>
                 <option value="In Service">Active in Service</option>
                 <option value="Retired">Retired</option>
@@ -160,7 +160,7 @@
             <h5 class="card-title">Next of Kin Details</h5>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>FullName</strong></label>
-              <input type="text" name="nok_name" class="form-control" id="inputAddress2" value="" placeholder="John Doe">
+              <input type="text" name="nok_name" class="form-control" id="inputAddress2" value="" placeholder="John Doe" required>
             </div>
             <div class="col-4">
               <label class="form-label"><strong>phone Number</strong></label>
@@ -168,13 +168,13 @@
             </div>
             <div class="col-4">
               <label class="form-label"><strong>Address</strong></label>
-              <input type="text" name="nok_address" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              <input type="text" name="nok_address" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
             </div>
 
             
             <div class="col-6">
               <label for="inputAddress2" class="form-label"><strong>Relationship</strong></label>
-              <select name="nok_relationship" class="form-control" id="">
+              <select name="nok_relationship" class="form-control" id="" required>
                 <option value="" selected disabled>Select Relationship</option>
                 <option value="son">Son</option>
                 <option value="daughter">Daughter</option>

@@ -279,25 +279,43 @@
       <li class="nav-heading">Pages</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="/staffs">
           <i class="bi bi-person"></i>
-          <span>Profile</span>
+          <span>Add Staff</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
+        <a class="nav-link collapsed" href="/pension">
           <i class="bi bi-question-circle"></i>
-          <span>F.A.Q</span>
+          <span>Pension</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
-          <i class="bi bi-envelope"></i>
-          <span>Contact</span>
+      <li>
+        <!--a class="dropdown-item d-flex align-items-center" href="#">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Sign Out</span>
+        </a--->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="/profile">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
         </a>
-      </li><!-- End Contact Page Nav -->
+      </li><!-- End Profile Page Nav -->
+        <div class="ml-4 space-y-1 d-flex">
+          <!-- Authentication -->
+          <!--i class="bi bi-box-arrow-right"></!--i--->
+          <form method="POST" action="{{ route('logout') }}">
+              @csrf
+
+              <x-responsive-nav-link class="dropdown-item d-flex align-items-center" :href="route('logout')"
+                      onclick="event.preventDefault();
+                                  this.closest('form').submit();">
+                  {{ __('Log Out') }}
+              </x-responsive-nav-link>
+          </form>
+      </div>
+      </li>
 
       <!--li class="nav-item">
         <a class="nav-link collapsed" href="pages-login.html">
