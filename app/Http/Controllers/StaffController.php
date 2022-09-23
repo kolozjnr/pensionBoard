@@ -36,7 +36,7 @@ class StaffController extends Controller
     public function store(Request $request)
     {
         StaffRecord::create($request->all());
-        return back()->with('succes', 'Record Saved');
+        return back()->with('success', 'Staff Record Saved');
     }
 
     /**

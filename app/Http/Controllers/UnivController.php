@@ -16,7 +16,7 @@ class UnivController extends Controller
 
     public function dashboard()
     {
-        $users = DB::table('staff_records')->paginate(15);
+        $users = DB::table('staff_records')->paginate(5);
         return view('admin.index', compact('users'));
     }
 
@@ -35,6 +35,7 @@ class UnivController extends Controller
 
     public function pension(Request $request)
     {
+        //$page = 0;
         $search = $request->get('search');
         $staff = DB::table('staff_records')->where([
             ['staff_id','like','%'.$search. '%']
@@ -57,13 +58,13 @@ class UnivController extends Controller
 
                 $payable = number_format($user->basic_salary/$userdate*1500);
             }
-            return view('admin.pension-scheme', compact('user','userdate','payable','retired_date','employed'));
+            return view('admin.pension-scheme', compact('user','userdate','payable','retired_date','employed','search'));
         }
        
     }
 
     //Get Employee details
-    public function getEmployeeDetails($empid = 0){
+   /* public function getEmployeeDetails($empid = 0){
 
         $staff = StaffRecord::find($empid);
   
@@ -93,7 +94,7 @@ class UnivController extends Controller
         $response['html'] = $html;
   
         return response()->json($response);
-     }
+     }*/
 
      public function profile(){
         $users = User::all();

@@ -94,7 +94,7 @@
             </div><!-- End Revenue Card -->
 
             <!-- Customers Card -->
-            <div class="col-xxl-4 col-xl-12">
+            <!--div class="col-xxl-4 col-xl-12">
 
               <div class="card info-card customers-card">
 
@@ -128,7 +128,7 @@
                 </div>
               </div>
 
-            </div><!-- End Customers Card -->
+            </!--div><!-- End Customers Card -->
 
 
             <!-- Recent Sales -->
@@ -151,7 +151,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Recent Sales <span>| Today</span></h5>
 
-                  <table class="table table-borderless datatable">
+                  <table class="table table-borderless">
                     <thead>
                       <tr>
                         <th scope="col">Staff ID</th>
@@ -162,17 +162,17 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @if(!empty($users) && $users->count())
+                          
+                      @foreach($users as $user)
                       <tr>
-                        @if(!empty($users) && $users->count())
-                            
-                        @foreach($users as $user)
                         <th scope="row"><a href="#">{{$user->staff_id}}</a></th>
                         <td> {{$user->fname}} {{$user->lname}} </td>
                         <td><a href="#" class="text-primary">{{$user->date_employed}}</a></td>
                         <td>{{$user->tel}}</td>
                         <td><span class="badge bg-success">{{$user->status}}</span></td>
-                        @endforeach
                     </tr>
+                    @endforeach
                     @else
                     <tr>
                       <td><h5>No Record Found</h5></td>
@@ -180,7 +180,12 @@
                     @endif
                     </tbody>
                   </table>
+                  {{-- Pagination --}}
+                  <div class="d-flex justify-content-center">
+                      {!! $users->links() !!}
+                  </div>
 
+        
                 </div>
 
               </div>

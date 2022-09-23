@@ -79,6 +79,7 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @if($search)
                       <tr>
                         <th scope="row"><a href="#">{{$user->staff_id}}</a></th>
                         <td> {{$user->fname}}</td>
@@ -153,6 +154,8 @@
                     </tr>
                     </tbody>
                     <td><button onclick="window.print()"><span class="btn btn-success">Print</span></button></td>
+                    @endif
+                    <strong>Search for a Staff</strong>
                   </table>
 
                 </div>
