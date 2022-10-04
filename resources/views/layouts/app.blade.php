@@ -96,39 +96,6 @@
 
         <!--Ajax Request for pensioneers--->
         <!-- Script -->
-   <script type='text/javascript'>
-    
-
-$(document).ready(function(){
- 
-  $('#empTable').on('click','.viewdetails',function(){
-      var empid = $(this).attr('data-id');
-
-      if(empid > 0){
-
-         // AJAX request
-         var url = "{{ route('getEmployeeDetails',[':empid']) }}";
-         url = url.replace(':empid',empid);
-
-         // Empty modal data
-         $('#tblempinfo tbody').empty();
-
-         $.ajax({
-             url: url,
-             dataType: 'json',
-             success: function(response){
-
-                 // Add employee details
-                 $('#tblempinfo tbody').html(response.html);
-
-                 // Display Modal
-                 $('#empModal').modal('show'); 
-             }
-         });
-      }
-  });
-
-});
-    </script>
+  
     </body>
 </html>

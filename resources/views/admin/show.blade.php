@@ -8,7 +8,6 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone Number</th>
@@ -19,11 +18,10 @@
             <tbody>
               @foreach($staff as $user)
               <tr>
-                <th scope="row">1</th>
                 <td>{{$user->fname}}</td>
                 <td>{{$user->email}}</td>
                 <td>{{$user->tel}}</td>
-                <td>{{$user->lga}}</td>
+                <td>{{$user->date_employed}}</td>
                 <td>
                   <form action="{{ route('staffs.destroy',$user->id) }}" method="POST" class="">
       

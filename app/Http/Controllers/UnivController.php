@@ -17,7 +17,9 @@ class UnivController extends Controller
     public function dashboard()
     {
         $users = DB::table('staff_records')->paginate(5);
-        return view('admin.index', compact('users'));
+        $total = StaffRecord::all();
+        $count = count($total);
+        return view('admin.index', compact('users','count'));
     }
 
     public function search(Request $request)
