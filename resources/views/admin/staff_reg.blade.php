@@ -152,10 +152,10 @@
             </div>
 
             
-            <div class="col-4">
+            <!--div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Total Enrollment</strong></label>
               <input type="text" name="total_enrollment" class="form-control" id="inputAddress2" value="" readonly>
-            </div>
+            </!--div-->
 
             <h5 class="card-title">Next of Kin Details</h5>
             <div class="col-4">
