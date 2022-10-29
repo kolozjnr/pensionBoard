@@ -33,6 +33,7 @@ Route::get('dashboard', [UnivController::class, 'dashboard'])
 ->name('dashboard');
 Route::resource('staffs',StaffController::class);
 Route::post('search', [UnivController::class, 'search'])->name('Search');
+Route::get('deleted', [UnivController::class, 'deleteDStaff'])->name('Deleted');
 Route::get('search', [UnivController::class, 'search'])->name('Search');
 Route::get('profile', [UnivController::class, 'profile'])->name('Profile');
 Route::get('pension', [UnivController::class, 'pension'])->name('pension');

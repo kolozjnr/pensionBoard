@@ -47,7 +47,7 @@ class StaffController extends Controller
      */
     public function show($id)
     {
-        $staff = StaffRecord::latest()->paginate(10);
+        $staff = StaffRecord::where('user_status', '1')->latest()->paginate(10);
         return view('admin.show', compact('staff'));
     }
 
@@ -88,9 +88,15 @@ class StaffController extends Controller
      */
     public function destroy($id)
     {
-        $id = StaffRecord::find($id);
-        $id->delete();
+        // $id = StaffRecord::find($id);
+        // $id->delete();
     
+        // return redirect()->route('staffs.index')
+        //                 ->with('success','Staff Deleted Successfully');
+        $update = StaffRecord::find($id);
+        //$input = $request->all();
+
+        $update->update(['user_status' => '2', 'status' => 'Deleted']);
         return redirect()->route('staffs.index')
                         ->with('success','Staff Deleted Successfully');
     }

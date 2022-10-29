@@ -149,7 +149,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">List of Enrolled <span>| Today</span></h5>
+                  <h5 class="card-title">List of Deleted Staff <span>| Today</span></h5>
 
                   <table class="table table-borderless">
                     <thead>

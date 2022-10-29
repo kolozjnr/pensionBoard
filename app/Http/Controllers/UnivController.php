@@ -16,7 +16,7 @@ class UnivController extends Controller
 
     public function dashboard()
     {
-        $users = DB::table('staff_records')->paginate(5);
+        $users = DB::table('staff_records')->where('user_status', '1')->paginate(5);
         $total = StaffRecord::all();
         $count = count($total);
         return view('admin.index', compact('users','count'));
@@ -57,8 +57,9 @@ class UnivController extends Controller
                 $retired_date=Carbon::parse($user->date_retired);
                 $userdate = $employed->diffInMonths($retired_date);
                
-
+                //dd($user->basic_salary);
                 $payable = number_format($user->basic_salary/$userdate*1500);
+                
             }
             return view('admin.pension-scheme', compact('user','userdate','payable','retired_date','employed','search'));
         }
@@ -111,5 +112,14 @@ class UnivController extends Controller
      public function contact(){
         return view("users.contact");
      }
+
+     public function deleteDStaff()
+    {
+        $users = DB::table('staff_records')->where('user_status', '2')->paginate(5);
+        $total = StaffRecord::all();
+        $count = count($total);
+        return view('admin.deleted', compact('users','count'));
+    }
+
   
 }

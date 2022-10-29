@@ -280,6 +280,12 @@
           <span>Add Staff</span>
         </a>
       </li><!-- End Profile Page Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/deleted">
+          <i class="bi bi-person"></i>
+          <span>Check Deleted Staffs</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="/pension">

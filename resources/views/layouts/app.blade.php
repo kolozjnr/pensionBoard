@@ -25,7 +25,7 @@
 
         <!-- Template Main CSS File -->
         <link href="{{asset('admin/assets/css/style.css')}}" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <!-- =======================================================
         * Template Name: NiceAdmin - v2.3.1
         * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -77,7 +77,9 @@
         </footer><!-- End Footer -->
 
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        
         <!-- Vendor JS Files -->
         <script src="{{asset('admin/assets/vendor/apexcharts/apexcharts.min.js')}}"></script>
         <script src="{{asset('admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -90,7 +92,6 @@
 
         <!-- Template Main JS File -->
         <script src="{{asset('admin/assets/js/main.js')}}"></script>
-        <script src="{{asset('admin/assets/js/lga.js')}}"></script>
         <script src="{{asset('admin/assets/js/lga.min.js')}}"></script>
         
 
