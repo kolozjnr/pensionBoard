@@ -41,6 +41,14 @@
               <label for="inputAddress2" class="form-label"><strong>Phone</strong></label>
               <input type="text" name="tel" value="{{$user->tel}}" class="form-control" id="inputAddress2" placeholder="07067317819">
             </div>
+            <div class="col-4">
+              <label for="inputAddress5" class="form-label">Gender</label>
+              <select name="gender" class="form-control" id="" required>
+                <option value="" selected disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
             <div class="col-md-4">
               <label for="DOB" class="form-label">Date Of Birth</label>
               <input type="date" name="dob" value="{{$user->dob}}" class="form-control" id="DOB">
@@ -113,6 +121,10 @@
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Basic Salary</strong></label>
               <input type="text" name="basic_salary" value="{{$user->basic_salary}}" class="form-control" id="inputAddress2" placeholder="Basic Salary">
+            </div>
+            <div class="col-4">
+              <label for="inputAddress2" class="form-label"><strong>Last Basic Salary</strong></label>
+              <input type="text" name="last_basic_salary" value="" class="form-control" id="inputAddress2" placeholder="Last Basic Salary">
             </div>
             <div class="col-4">
               <label for="inputAddress2" class="form-label"><strong>Rent Allowance</strong></label>

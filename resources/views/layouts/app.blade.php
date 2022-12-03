@@ -65,7 +65,7 @@
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
             <div class="copyright">
-            &copy; Copyright <strong><span>Niger State pension Board</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Federal Polytechnic Bida, pension Board</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
             <!-- All the links in the footer should remain intact. -->

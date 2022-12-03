@@ -47,7 +47,7 @@
             <a href="/" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="d-flex align-items-center">Niger State Pension Board</h1>
+                <h1 class="d-flex align-items-center">Federal Polytechnic Bida, Pension Board</h1>
             </a>
         
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -57,7 +57,7 @@
                 <ul>
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/">FAQ</a></li>
+                {{-- <li><a href="/">FAQ</a></li> --}}
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/login">Login</a></li>
                 <li><a href="/register">Register</a></li>
@@ -78,7 +78,7 @@
                 <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
                     <a href="index.html" class="logo d-flex align-items-center">
-                    <span>Niger State Pension</span>
+                    <span>Federal Polytechnic Bida, Pension</span>
                     </a>
                     <p>The contributory Pension Scheme Requires pension funds to be privately managed exclusively by licensed pension Fund Administration (PFA)</p>
                     <div class="social-links d-flex  mt-3">
@@ -94,7 +94,7 @@
                     <ul>
                     <li><i class="bi bi-dash"></i> <a href="/">Home</a></li>
                     <li><i class="bi bi-dash"></i> <a href="/about">About us</a></li>
-                    <li><i class="bi bi-dash"></i> <a href="/faq">FAQ</a></li>
+                    {{-- <li><i class="bi bi-dash"></i> <a href="/faq">FAQ</a></li> --}}
                     <li><i class="bi bi-dash"></i> <a href="/contact">Contact</a></li>
                     <li><i class="bi bi-dash"></i> <a href="/privacy">Privacy policy</a></li>
                     </ul>
@@ -113,8 +113,8 @@
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
                     <p>
-                    A108 Adam Street <br>
-                    Minna, Niger State<br>
+                    Doko Rd <br>
+                    Bida, Niger State<br>
                     Nigeria <br><br>
                     <strong>Phone:</strong> +2347067317819<br>
                     <strong>Email:</strong> info@pension.com<br>
@@ -129,7 +129,7 @@
             <div class="footer-legal">
             <div class="container">
                 <div class="copyright">
-                &copy; Copyright <strong><span>Niger State Pension Board</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Federal Polytechnic Bida, Pension Board</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                 <!-- All the links in the footer should remain intact. -->

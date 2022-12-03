@@ -41,6 +41,15 @@
               <label for="inputAddress2" class="form-label"><strong>Phone</strong></label>
               <input type="text" name="tel" class="form-control" id="inputAddress2" placeholder="07067317819" required>
             </div>
+            
+            <div class="col-4">
+              <label for="inputAddress5" class="form-label">Gender</label>
+              <select name="gender" class="form-control" id="" required>
+                <option value="" selected disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
             <div class="col-md-4">
               <label for="DOB" class="form-label">Date Of Birth</label>
               <input type="date" name="dob" class="form-control" id="DOB" required>

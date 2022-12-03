@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+                  <h5 class="card-title">Pension Details <span>| Today</span></h5>
 
                   <table class="table table-borderless">
                     <thead>
@@ -123,8 +123,9 @@
                     </tbody>
 
                     
-                    <h3>Next Of Kin</h3>
+                    <h3></h3>
                     <thead>
+                      <tr><td><strong>Next of Kin Details</strong></td></tr>
                       <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Relationship</th>
@@ -144,18 +145,20 @@
 
                     <thead>
                       <tr>
-                        <th scope="col">Total Pension</th>
+                        <th scope="col">Total Savings</th>
+                        
+                      <th scope="col">Total Pension</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row"> <strong> &#8358 {{$payable}}</strong> </th>
-                        
+                        <th scope="row"> <strong> &#8358 {{$pension}}</strong> </th>
                     </tr>
                     </tbody>
                     <td><button onclick="window.print()"><span class="btn btn-success">Print</span></button></td>
                     @endif
-                    <strong>Search for a Staff</strong>
+                    <strong>Staff Details</strong>
                   </table>
 
                 </div>

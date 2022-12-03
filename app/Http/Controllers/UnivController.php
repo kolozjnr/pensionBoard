@@ -59,9 +59,16 @@ class UnivController extends Controller
                
                 //dd($user->basic_salary);
                 $payable = number_format($user->basic_salary/$userdate*1500);
+
+                if($user->gender == "Male"){
+                    $pension = number_format(($user->basic_salary/$userdate*1500)/18*12); 
+                }elseif($user->gender == "Female"){
+                    $pension = number_format(($user->basic_salary/$userdate*1500)/20*12);
+                }
+                
                 
             }
-            return view('admin.pension-scheme', compact('user','userdate','payable','retired_date','employed','search'));
+            return view('admin.pension-scheme', compact('user', 'pension', 'userdate','payable','retired_date','employed','search'));
         }
        
     }
